@@ -643,10 +643,11 @@
             <h2>Contacto</h2>
             <p>¿Tienes un proyecto en mente? ¡Conversemos!</p>
         </div>
+        <!-- Agrega los atributos name para que Formspree reciba correctamente los datos -->
         <form class="contact-form" action="https://formspree.io/f/manqpprd" method="POST">
-            <input type="text" placeholder="Tu Nombre" required>
-            <input type="email" placeholder="Tu Email" required>
-            <textarea placeholder="Cuéntame sobre tu proyecto" rows="6" required></textarea>
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Email" required>
+            <textarea name="message" placeholder="Cuéntame sobre tu proyecto" rows="6" required></textarea>
             <button type="submit">Enviar Mensaje</button>
         </form>
         <div class="social-links">
@@ -680,4 +681,4 @@
     </script>
 </body>
 </html>
-</qodoArtifact>
+
